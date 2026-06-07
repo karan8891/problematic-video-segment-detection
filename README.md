@@ -1,3 +1,19 @@
+## Documentation
+
+Detailed documentation is available in the `docs/` directory:
+
+- [Architecture Overview](docs/architecture.md)  
+  Explains the API layer, persistence layer, asynchronous processing flow, analyzer pipeline, and report generation design.
+
+- [Model Selection and Tooling Notes](docs/model_selection.md)  
+  Explains why Whisper Tiny, ffmpeg, transcript analysis, and the prototype visual analyzer were selected, including latency, memory, cost, and upgrade tradeoffs.
+
+- [Operational Notes](docs/operational_notes.md)  
+  Covers logging, failure handling, artifact storage, monitoring opportunities, scalability path, and security considerations.
+
+- [Screenshots and Evidence](screenshots/)  
+  Contains Swagger API execution evidence, pytest results, and terminal logs showing ffmpeg media extraction and Whisper Tiny processing.
+
 # Problematic Video Segment Detection
 
 ## Overview
