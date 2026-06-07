@@ -16,6 +16,8 @@ Detailed documentation is available in the `docs/` directory:
 - [Screenshots and Evidence](screenshots/)  
   Contains Swagger API execution evidence, pytest results, and terminal logs showing ffmpeg media extraction and Whisper Tiny processing.
 
+Dockerfile and docker-compose.yml are included. Docker build was attempted on the development laptop, but the local Docker build failed while installing the Whisper dependency. The application was fully validated locally with Python, FFmpeg, Whisper Tiny, Swagger, and pytest.
+
 ## Overview
 
 This project implements an asynchronous backend system that analyzes videos and identifies potentially problematic content. Instead of returning a simple pass/fail result, the system generates a structured report containing timestamped findings, severity levels, evidence, and supporting artifacts.
