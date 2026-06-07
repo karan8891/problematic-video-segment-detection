@@ -1,3 +1,5 @@
+# Problematic Video Segment Detection
+
 ## Documentation
 
 Detailed documentation is available in the `docs/` directory:
@@ -13,8 +15,6 @@ Detailed documentation is available in the `docs/` directory:
 
 - [Screenshots and Evidence](screenshots/)  
   Contains Swagger API execution evidence, pytest results, and terminal logs showing ffmpeg media extraction and Whisper Tiny processing.
-
-# Problematic Video Segment Detection
 
 ## Overview
 
