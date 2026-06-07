@@ -1,0 +1,10 @@
+services:
+  video-risk-api:
+    build: .
+    container_name: video-risk-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
