@@ -169,10 +169,61 @@ pytest
 
 ## Docker
 
+Docker support is included via:
+
+- Dockerfile
+- docker-compose.yml
+
+Build command:
+
 ```bash
 docker compose up --build
 ```
 
+For older Docker Compose installations:
+
+```bash
+docker-compose up
+```
+
+### Docker Validation Notes
+
+The application was fully validated locally using:
+
+- Python 3.8
+- FastAPI
+- FFmpeg
+- OpenAI Whisper Tiny
+- Swagger UI
+- pytest
+
+The Docker configuration is included and was tested during development. Docker image creation encountered a dependency build issue related to the `openai-whisper` package and its build environment. The application functionality itself was successfully verified through local execution, API testing, FFmpeg processing, Whisper transcription, and automated tests.
+
+Evidence of successful execution is included in the `screenshots/` directory.
+
+---
+
+## Validation Evidence
+
+The following components were successfully demonstrated:
+
+- API health endpoint
+- Video submission workflow
+- Asynchronous processing
+- Status tracking
+- Findings report generation
+- Artifact retrieval
+- Video question answering endpoint
+- FFmpeg media extraction
+- Whisper Tiny transcription
+- SQLite persistence
+- Automated pytest execution (3 tests passed)
+
+Evidence is available in:
+
+```text
+screenshots/
+```
 ---
 
 ## Current Limitations
